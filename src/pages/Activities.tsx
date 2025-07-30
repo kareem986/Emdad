@@ -31,7 +31,7 @@ export default function Activities() {
     },
     {
       icon: Users,
-      number: "200+",
+      number: "40+",
       titleEn: "Professional Employees",
       titleAr: "موظف محترف"
     },

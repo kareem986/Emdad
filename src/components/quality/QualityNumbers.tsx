@@ -16,22 +16,24 @@ export function QualityNumbers() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const stats = [
-    { 
-      value: '2.5M', 
-      target: 2500000,
-      label: t('quality.numbers.distance'),
-      icon: Truck,
-      suffix: 'KM',
-      color: 'from-blue-600 to-blue-800'
-    },
-    { 
-      value: '50K', 
-      target: 50000,
-      label: t('quality.numbers.volume'),
-      icon: Droplet,
-      suffix: 'L',
-      color: 'from-amber-600 to-yellow-700'
-    },
+  {
+  value: '1M',
+  target: 10000,
+  label: t('quality.numbers.distance'),
+  icon: Truck,
+  suffix: 'كم',
+  color: 'from-blue-600 to-blue-800'
+}
+,
+  {
+  value: '218K',
+  target: 218000,
+  label: t('quality.numbers.volume'),
+  icon: Droplet,
+  suffix: 'L',
+  color: 'from-amber-600 to-yellow-700'
+}
+,
     { 
       value: '20', 
       target: 20,

@@ -1,6 +1,5 @@
-
 import { useLanguage } from '@/hooks/useLanguage';
-import { Award, CheckCircle } from 'lucide-react';
+import { Award } from 'lucide-react';
 
 export function QualityCertifications() {
   const { t } = useLanguage();
@@ -17,25 +16,40 @@ export function QualityCertifications() {
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto space-y-6 mb-12">
-          <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 animate-fade-in-up">
-            <div className="flex items-center space-x-4 rtl:space-x-reverse mb-4">
-              <div className="w-12 h-12 bg-emdad-gold/10 rounded-lg flex items-center justify-center">
-                <Award className="w-6 h-6 text-emdad-gold" />
+        {/* Cards Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+          {/* ISO 9001 Card */}
+          <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 animate-fade-in-up">
+            <img
+              src="/img/ISO9001.jpg"
+              alt="ISO 9001"
+              className="w-full h-64 object-contain bg-gray-100 p-4"
+            />
+            <div className="p-6 text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-12 h-12 bg-emdad-gold/10 rounded-full flex items-center justify-center">
+                  <Award className="w-6 h-6 text-emdad-gold" />
+                </div>
               </div>
-              <CheckCircle className="w-6 h-6 text-green-500" />
+              <p className="text-gray-700 font-medium">{t('quality.certifications.iso9001')}</p>
             </div>
-            <p className="text-gray-700 font-medium">{t('quality.certifications.iso9001')}</p>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            <div className="flex items-center space-x-4 rtl:space-x-reverse mb-4">
-              <div className="w-12 h-12 bg-emdad-gold/10 rounded-lg flex items-center justify-center">
-                <Award className="w-6 h-6 text-emdad-gold" />
+          {/* ISO 29001 Card */}
+          <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <img
+              src="/img/ISO29001.jpg"
+              alt="ISO 29001"
+              className="w-full h-64 object-contain bg-gray-100 p-4"
+            />
+            <div className="p-6 text-center">
+              <div className="flex justify-center mb-4">
+                <div className="w-12 h-12 bg-emdad-gold/10 rounded-full flex items-center justify-center">
+                  <Award className="w-6 h-6 text-emdad-gold" />
+                </div>
               </div>
-              <CheckCircle className="w-6 h-6 text-green-500" />
+              <p className="text-gray-700 font-medium">{t('quality.certifications.iso29001')}</p>
             </div>
-            <p className="text-gray-700 font-medium">{t('quality.certifications.iso29001')}</p>
           </div>
         </div>
 

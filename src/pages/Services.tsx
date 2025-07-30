@@ -40,7 +40,7 @@ export default function Services() {
     {
       icon: Gauge,
       titleEn: "Transport capacity exceeding 1.5 million liters per month",
-      titleAr: "قدرة نقل تتجاوز 1.5 مليون لتر شهريًا"
+      titleAr: "قدرة نقل تتجاوز 13 مليون لتر شهريًا"
     },
     {
       icon: Clock,

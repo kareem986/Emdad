@@ -219,61 +219,6 @@ At Emdad, safety is not optional—it is the foundation of our reliability and r
         </div>
       </section>
 
-      {/* Emergency Response Case Study */}
-      <section className="py-20 bg-emdad-navy">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <AlertTriangle className="w-16 h-16 text-emdad-gold mx-auto mb-6" />
-            <h2 className="text-4xl font-bold text-emdad-gold mb-6">
-              {language === 'ar' ? 'مثال على الاستجابة للطوارئ' : 'Emergency Response Example'}
-            </h2>
-            
-            <Card className="bg-white/10 backdrop-blur-sm border-emdad-gold/20">
-              <CardContent className="p-8">
-                <div className="grid md:grid-cols-3 gap-6 text-white">
-                  <div className="text-center">
-                    <Clock className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <div className="text-2xl font-bold text-emdad-gold mb-2">
-                      {language === 'ar' ? '< 6 ساعات' : '< 6 Hours'}
-                    </div>
-                    <p className="text-sm">
-                      {language === 'ar' ? 'وقت الاستجابة' : 'Response Time'}
-                    </p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <Shield className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <div className="text-2xl font-bold text-emdad-gold mb-2">
-                      {language === 'ar' ? 'صفر' : 'Zero'}
-                    </div>
-                    <p className="text-sm">
-                      {language === 'ar' ? 'إصابات' : 'Injuries'}
-                    </p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <CheckCircle className="w-12 h-12 text-emdad-gold mx-auto mb-4" />
-                    <div className="text-2xl font-bold text-emdad-gold mb-2">
-                      {language === 'ar' ? '100%' : '100%'}
-                    </div>
-                    <p className="text-sm">
-                      {language === 'ar' ? 'احتواء آمن' : 'Safe Containment'}
-                    </p>
-                  </div>
-                </div>
-                
-                <p className="text-white/90 mt-6 leading-relaxed">
-                  {language === 'ar' 
-                    ? 'في عام 2023، تم التعامل مع تسرب محدود في إحدى الشحنات دون أي إصابات، وتمت إعادة توجيه الحمولة بأمان إلى موقعها البديل خلال أقل من 6 ساعات.'
-                    : 'In 2023, a minor leak was contained without injury, and the shipment was safely redirected to an alternative location within 6 hours.'
-                  }
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Certifications Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
