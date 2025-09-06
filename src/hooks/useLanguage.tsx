@@ -11,6 +11,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   en: {
     // Navigation
+    'nav.home': 'Home',
     'nav.about': 'About',
     'nav.services': 'Services',
     'nav.activities': 'Activities',
@@ -239,6 +240,7 @@ const translations = {
   },
   ar: {
     // Navigation
+    'nav.home': 'الرئيسية',
     'nav.about': 'حول الشركة',
     'nav.services': 'الخدمات',
     'nav.activities': 'الأنشطة',

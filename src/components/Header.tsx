@@ -67,6 +67,7 @@ export function Header() {
   };
 
   const navItems = [
+    { key: "nav.home", href: "" },
     { key: "nav.about", href: "about" },
     { key: "nav.quality", href: "quality" },
     { key: "nav.sustainability", href: "sustainability" },
@@ -101,10 +102,10 @@ export function Header() {
             <img
               src="/img/EMDAD just.png"
               alt="EMDAD Direct Logistics"
-              className="h-12 w-auto object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+              className="h-8 md:h-10 lg:h-12 w-auto object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg"
             />
             <span
-              className="text-2xl font-semibold text-emdad-gold italic tracking-wide hidden sm:inline"
+              className="text-lg md:text-xl lg:text-2xl font-semibold text-emdad-gold italic tracking-wide hidden sm:inline"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
               {language === "ar" ? "إمداد مباشر" : "Emdad Mubasher"}
@@ -161,7 +162,7 @@ export function Header() {
             </div>
 
             {/* Other Navigation Items */}
-            {navItems.slice(1).map((item, index) => (
+            {navItems.slice(2).map((item, index) => (
               <button
                 key={item.key}
                 onClick={() => handleNavigation(item.href)}
@@ -198,6 +199,12 @@ export function Header() {
           <nav className="lg:hidden mt-4 pb-4 border-t border-gray-700 animate-slideDown bg-emdad-navy rounded-b-lg shadow-lg">
             <div className="flex flex-col space-y-4 pt-4 px-4">
               <button
+                onClick={() => handleNavigation("")}
+                className="text-white hover:text-emdad-gold transition-colors duration-200 text-left"
+              >
+                {t("nav.home")}
+              </button>
+              <button
                 onClick={() => handleNavigation("about")}
                 className="text-white hover:text-emdad-gold transition-colors duration-200 text-left"
               >
@@ -214,7 +221,7 @@ export function Header() {
                   </button>
                 ))}
               </div>
-              {navItems.slice(1).map((item, index) => (
+              {navItems.slice(2).map((item, index) => (
                 <button
                   key={item.key}
                   onClick={() => handleNavigation(item.href)}
